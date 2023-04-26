@@ -43,15 +43,15 @@
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
-//       | CTRL |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT|  UP | RGHT| INS | APP |
-//       |      |  0  |  1  |  2  |  3  |  .  |   | VOLD| END | DOWN| PGDN| PAUS|     |
-//                          |     |     | ADJ |   | ADJ |     |     |
+// |     | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|    | NMLK |  /  |  7  |  8  |  9  |  -  |    |
+//       | MUT | LEFT|  UP | RGHT| INS | APP |    | CTRL |  *  |  4  |  5  |  6  |  +  |
+//       | VOLD| END | DOWN| PGDN| PAUS|     |    |      |  0  |  1  |  2  |  3  |  .  |
+//                         |     |     | ADJ |    | ADJ  |     |     |
                         bindings = <
-  &none   &mt LGUI KP_NUM   &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp C_VOL_UP   &kp HOME   &kp UP      &kp PG_UP   &kp SLCK          &kp CLCK           &none
-          &mt LCTRL EQUAL   &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &kp C_MUTE     &kp LEFT   &kp DOWN    &kp RIGHT   &kp INS           &mt RCTRL  K_APP
-          &kp LALT          &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp C_VOL_DN   &kp END    &kp PSCRN   &kp PG_DN   &kp PAUSE_BREAK   &kp RALT
-                                                          &trans      &trans      &lt ADJ BSPC   &lt ADJ SPACE  &trans     &trans
+  &none   &mt LGUI CLCK     &kp C_VOL_UP   &kp HOME   &kp UP      &kp PG_UP   &kp SLCK              &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp KP_NUM        &none
+          &mt LCTRL K_APP   &kp C_MUTE     &kp LEFT   &kp DOWN    &kp RIGHT   &kp INS               &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &mt RCTRL EQUAL
+          &kp LALT          &kp C_VOL_DN   &kp END    &kp PSCRN   &kp PG_DN   &kp PAUSE_BREAK       &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp RALT
+                                                      &trans      &trans      &lt ADJ BSPC          &lt ADJ SPACE     &trans      &trans
                         >;
                 };
                 adjust_layer {
