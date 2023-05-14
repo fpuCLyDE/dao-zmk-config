@@ -50,11 +50,22 @@
 //       | MUT | LEFT|  UP | RGHT| INS | APP |    | CTRL |  *  |  4  |  5  |  6  |  +  |
 //       | VOLD| END | DOWN| PGDN| PAUS|     |    |      |  0  |  1  |  2  |  3  |  .  |
 //                         |     |     | ADJ |    | ADJ  |     |     |
+//                        bindings = <
+//  &none   &mt LGUI CLCK     &kp C_VOL_UP   &kp HOME   &kp UP      &kp PG_UP   &kp SLCK              &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp KP_NUM        &none
+//          &mt LCTRL K_APP   &kp C_MUTE     &kp LEFT   &kp DOWN    &kp RIGHT   &kp INS               &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &mt RCTRL EQUAL
+//          &kp LALT          &kp C_VOL_DN   &kp END    &kp PSCRN   &kp PG_DN   &kp PAUSE_BREAK       &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp RALT
+//                                                      &lt ADJ TAB &trans      &trans                &trans            &trans      &lt ADJ DEL
+//                        >;
+//                };
+// |     | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|    | NMLK |  /  |  7  |  8  |  9  |  -  |    |
+//       | MUT | LEFT|  UP | RGHT| INS | APP |    | CTRL |  *  |  4  |  5  |  6  |  +  |
+//       | VOLD| END | DOWN| PGDN| PAUS|     |    |      |  0  |  1  |  2  |  3  |  .  |
+//                         |     |     | ADJ |    | ADJ  |     |     |
                         bindings = <
-  &none   &mt LGUI CLCK     &kp C_VOL_UP   &kp HOME   &kp UP      &kp PG_UP   &kp SLCK              &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp KP_NUM        &none
-          &mt LCTRL K_APP   &kp C_MUTE     &kp LEFT   &kp DOWN    &kp RIGHT   &kp INS               &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &mt RCTRL EQUAL
-          &kp LALT          &kp C_VOL_DN   &kp END    &kp PSCRN   &kp PG_DN   &kp PAUSE_BREAK       &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp RALT
-                                                      &lt ADJ TAB &trans      &trans                &trans            &trans      &lt ADJ DEL
+  &none   &mt LGUI CLCK     &kp PSCRN   &kp HOME   &kp UP      &kp END     &kp SLCK              &kp KP_SLASH      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS   &kp KP_NUM        &none
+          &mt LCTRL K_APP   &kp PG_UP   &kp LEFT   &kp DOWN    &kp RIGHT   &kp INS               &kp KP_MULTIPLY   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS    &mt RCTRL EQUAL
+          &kp LALT          &kp PG_DN   &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp PAUSE_BREAK       &kp KP_N0         &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DOT     &kp RALT
+                                                   &lt ADJ TAB &trans      &trans                &trans            &trans      &lt ADJ DEL
                         >;
                 };
                 adjust_layer {
